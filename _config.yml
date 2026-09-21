@@ -1,3 +1,5 @@
+url: "https://the-jimmy-nation.github.io"
+baseurl: "" # Leave as "" if this is your primary username.github.io repository
 theme: jekyll-theme-minimal
 title: Jimmy's GitHub page
 description: Personal HTML portfolio page and soon a photography site.
