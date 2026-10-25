@@ -1,5 +1,6 @@
 /*
-  TABLE OF CONTENTS
+  TABLE OF CONTENTS OF STYLESHEET
+
   1. Custom properties and reset
   2. Base typography and links
   3. Header and navigation
@@ -9,6 +10,7 @@
   7. Footer
   8. Responsive breakpoints
   9. Print styles
+  
 */
 
 /* 1. Custom properties and reset
@@ -24,6 +26,8 @@
   --medium-space: 1.5rem;
   --large-space: 3rem;
 }
+
+/* Pseudo-class selector, and custom properties for CSS so no need to repeat the same color values */
 
 * {
   box-sizing: border-box;
@@ -277,8 +281,8 @@ a:focus-visible {
   border-right: 1px solid rgb(22 50 79 / 25%);
 }
 
-.sidebar section + section,
-.main-column section + section {
+.sidebar section+section,
+.main-column section+section {
   margin-top: var(--large-space);
   padding-top: var(--large-space);
   border-top: 1px solid currentcolor;
@@ -306,7 +310,7 @@ a:focus-visible {
   font-size: 0.85rem;
 }
 
-.plain-list li + li {
+.plain-list li+li {
   margin-top: 0.4rem;
 }
 
@@ -315,7 +319,7 @@ a:focus-visible {
   border-left: 4px solid var(--coral);
 }
 
-.timeline-item + .timeline-item {
+.timeline-item+.timeline-item {
   margin-top: var(--large-space);
 }
 
@@ -377,6 +381,7 @@ footer .eyebrow {
 
 /* Breakpoint 1: phones */
 @media (max-width: 40rem) {
+
   .site-header,
   .hero,
   .content-grid,
@@ -415,6 +420,7 @@ footer .eyebrow {
     border-right: 0;
   }
 }
+
 /* Breakpoint 2: tablet and smaller laptop screens */
 @media (max-width: 56.25rem) {
   .hero {
